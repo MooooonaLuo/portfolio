@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-150477387-1');
+        </script>
+
+        <title>Egor - Mona Luo</title>
+        <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="project">  
+        <div class="container-fliud">
+             <!-- top nav -->
+            <div class="top-nav" id="navbar">
+                <script src="nav_toggle.js"></script>
+                <div class="top-nav-logo">
+                    <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="index.html#work">WORK</a>
+                    <a href="index.html#experiments">EXPERIMENTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+
+            <div class="project-body">
+                
+                <!-- content -->
+                <div class="content">
+
+                    <!-- title -->
+                    <div class="title">
+                        <h1>EGOR</h1>
+                        <p id="info">Interactive Art Installation &#183; 2021</p>
+                    </div>
+
+                    <!-- overview and my role -->
+                    <div class="intro">
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-8">
+                                    <p id="subtitle1">Overview</p>
+                                    <p>Egor is a reflection of a person's ego - it grows when attention is given and shrinks when it's taken away. Inspired by the concept of attention currency, Egor, a plastic sculpture, inflates when the audience feeds it with likes, a metaphor for how people interact on social media.</p>
+                                    <p>This project was completed collaboratively with Syed Osama Hussain.</p>
+                                </div>
+                                <div class="role col-sm-4">
+                                    <p id="subtitle1">Tools</p>
+                                    <p>Arduino</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+
+                    <!-- detail -->
+                    <div class="video-container">
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/770259374?h=1d12607866&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="egor.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+
+
+                    <div class="block" style="padding-top: 7vh;">
+                        <h2 id="subtitle2">how does it work?</h2>
+                        <img src="image/egor_diagram.jpg" alt="diagram" width="100%">
+                        <h4 id="subtitle3">Input: Load Cell</h4>
+                        <p>The main input of the installation which is also the primary interaction with the audience is the load cell weight scale. This is an accurate measuring scale that can accurately communicate the amount of weight on it with the Arduino. This load cell is installed inside the base of the basket. The audience can then place or throw objects, heart-shaped stress balls in this case, in the basket and the total weight will be read by the sensor.</p>
+                        <img src="image/egor_loadcell.jpg" alt="load cell" width="100%">
+                        <h4 id="subtitle3">Process: Calculating Levels</h4>
+                        <p>Next, we needed to figure out a mechanism to control the output based on the input of the load cell. Our main objective was to inflate Egor when the weight increases, maintain different levels of inflation and deflate when the weight is reduced. </p>
+                        <p>First, we figured that each ball weight 15 grams, this became our parameter. Next, we established different levels representing the speed of the fan, we called this “fanLevel.” At the very basic level, our formula was: if the weight is increased by 15 grams that means a ball is thrown in and we need to move to the next level till level 24 (the number of balls we had).</p>
+                        <h4 id="subtitle3">Output: Blow Up My Ego</h4>
+                        <p>The output from every ball thrown in the basket was a 20 inch diameter floor fan running at 1,100 RPM at a max speed capable of blowing 2,400 CMF. As our balloon was made of large trash bags, we needed to carefully select the number of bags used to balance the fan’s output and the time it takes to blow up the installation. We did not want it to take too long that the audience to become disinterested or make the experience too quickly.</p>
+                        <img src="image/egor_fan.jpg" alt="Fan with wooden stand" width="100%" style="margin-bottom: 0;">
+                    </div>
+                   
+                    <div class="block">
+                        <h2 id="subtitle2">creation process</h2>
+                        <h4 id="subtitle3">Ideation</h4>
+                        <p>Interaction and feasibility are the main factors we take into consideration. At first, we thought about using computer vision to recognize people’s faces and thereby counting the number of people who are looking at Egor. However, we realized that the interaction would be too automatic and could be inaccurate technically. Therefore, we came up with the form of interaction we eventually used. </p>
+                        <img src="image/egor_sketch.jpg" alt="sketches" width="100%">
+                        <h4 id="subtitle3">Research & Testing Feasibility</h4>
+                        <p>We researched coding, technology, and equipment to understand whether our ideas are feasible and explore what we need to make them happen. Prior to the giant fan, we used for our installation, we tried out other equipment, such as air purifiers and a 12V computer fan, to figure out what equipment is the most suitable. </p>
+                        <img src="image/egor_test.jpg" alt="testing with fans" width="100%">
+                        <h4 id="subtitle3">Woodcraft</h4>
+                        <p>We cut and nailed MDF to make the base of the fan. This is used for creating room for air to come in through the fan and for hiding the circuits.</p>
+                        <img src="image/egor_woodcraft.jpg" alt="woodwork" width="100%" style="margin-bottom: 0;">
+                    </div>
+
+                    <div class="block" style="padding-bottom: 0;">
+                        <h2 id="subtitle2">exhibition</h2>
+                    </div>
+
+                    <img src="image/egor_final.jpg" alt="images of installation and team" width="100%">
+                    
+                    
+                </div>
+            </div>
+
+            
+                <div class="next container-fliud">
+                    <a href="animaze.html">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>NEXT</p>
+                                <h1>ANIMAZE</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <img id="arrow" src="image/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            <div class="project-body">
+                
+                <!-- footer -->
+                <div class="footer">
+                    <div class="contact">
+                        <a href="mailto:monaluo.design@gmail.com" target="_blank">Email</a>
+                        <a href="https://www.linkedin.com/in/jiayu-luo/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
+                        <span class="copyright"><span>Designed and developed by Mona Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2022 Mona Luo.</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div> 
+    </body>
+
+    </html>

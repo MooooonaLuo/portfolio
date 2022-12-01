@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-150477387-1');
+        </script>
+
+        <title>Chegg - Mona Luo</title>
+        <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="project">  
+        <div class="container-fliud">
+             <!-- top nav -->
+             <div class="top-nav" id="navbar">
+                <script src="nav_toggle.js"></script>
+                <div class="top-nav-logo">
+                    <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="index.html#work">WORK</a>
+                    <a href="index.html#experiments">EXPERIMENTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+            
+            <div class="project-body">
+                
+                <!-- content -->
+                <div class="content">
+
+                    <!-- title -->
+                    <div class="title">
+                        <img id="jnjtag" src="image/chegg_logo.jpg" alt="Chegg logo" style="margin-bottom: 30px; width: 100px;">
+                        <h1>CHEGG INTERNSHIP</h1>
+                        <p id="info">UX Design &#183; 2022</p>
+                    </div>
+
+                    <!-- password -->
+                    <div class="content" style="margin-top: 50px; margin-bottom: 30px; width:auto; height: 380px; background-color: antiquewhite;  padding-top: 80px; padding-bottom: 30px;border-radius: 5px; ">
+                        <script src="chegg.js"></script>
+                        <img style="width: 30px; display: block; margin: auto; padding-bottom: 20px;" src="image/chegg_lock.png" alt="lock">
+                        <p style="padding-bottom: 0.5em; line-height: 1.5em; color:rgb(46, 46, 46); font-size: 20px; text-align: center;">Access the full version under NDA</p>
+                        <div style="display:block; margin:auto; width: 260px;">
+                                <form class="hero-form">
+                                    <input type="password" id="password" style="padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em;" name="password" maxlength="8" id="password" placeholder="Enter the password" required/>
+                                </form>
+                                <button id="submit" style="margin-top:1em; border-style: none; background-color: #EB7100; color: white; font-weight: 600; padding-top: 0.5em; padding-bottom: 0.5em;" onclick="onSubmit()">Submit</button>
+                                <p id="alert" style="color:rgb(245, 76, 76); font-size: 14px; margin-top: 0.5em;"></p>
+                        </div>
+                        <!-- press enter -->
+                        <script>
+                                var input = document.getElementById("password");
+                                input.addEventListener("keypress", function(event) {
+                                if (event.key === "Enter") {
+                                    event.preventDefault();
+                                    document.getElementById("submit").click();
+                                }
+                                });
+                        </script>
+                       
+                    </div>
+                    <style>
+                        .content{
+                            padding-left: 50px; 
+                            padding-right: 50px;
+                        }
+                        input{
+                                width: 260px;
+                            }
+                            button{
+                                width: 260px;
+                            }
+                        @media only screen and (max-width: 450px){
+                            .content{
+                                padding-left: 10px; 
+                                padding-right: 10px;
+                            }
+                            form{
+                                width: 100%;
+                            }
+                            button{
+                                width: 100%;
+                            }
+                        }
+                    </style>
+
+                    <!-- overview and my role -->
+                    <div class="intro">
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-6">
+                                    <p id="subtitle1">Overview</p>
+                                    <p>Chegg is a higher-education study tool with 4.6 Million subscribers. It provides textbook solutions, homework help, exam preparation, and more.</p>
+                                </div>
+                                <div class="role col-sm-6">
+                                    <p id="subtitle1">My Contributions</p>
+                                    <ul>
+                                        <li>In my capstone project, I designed two new modules to increase discoverability and engagement on Chegg’s Course Dashboard. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="overview col-sm-3">
+                                    <p id="subtitle1">Duration</p>
+                                    <p>12 Weeks</p>
+                                </div>
+                                <div class="overview col-sm-3">
+                                    <p id="subtitle1">My Role</p>
+                                    <p>UX Design Intern<br>Project Owner</p>
+                                    
+                                </div>
+                                <div class="role col-sm-3">
+                                    <p id="subtitle1">Team</p>
+                                    <p>1 UX Design Intern (Me) <br>1 Content Design Intern<br>1 UXR Intern<br>2 PM Interns</p>
+                                </div>
+                                <div class="role col-sm-3">
+                                    <p id="subtitle1">Tools</p>
+                                    <p>Figma<br>FigJam<br>Confluence</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img id="previewImg" src="image/chegg_photo.jpg" alt="" width="100%">
+
+  
+
+                    </div>
+                    
+
+                    <!-- detail -->
+
+                    <div class="block">
+                        <h2 id="subtitle2">Lead the project</h2>
+                        <p>In my capstone project, I took the lead in the cross-functional team by hosting meetings, proposing more reasonable project timelines, and proactively reaching out to the adjacent project team to handle cross-team dependency.</p>
+                    </div>
+
+
+                    <div class="block">
+                        <!-- <p id="section-title">REFLECTION</p> -->
+                        <h2 id="subtitle2">challenges I overcame</h2>
+                        <p><b id="toogether-highlight">My team was double the size of a normal team, and communication in such a big team was challenging.</b></p>
+                        <p>I worked cross-functionally with four interns, each has a manager. The interns took ownership of the project, but there were many stakeholders to be kept in the loop. Over time, I developed the skill to communicate with the right person at the right cadence. I also employed different ways to share updates on my design and collect feedback, such as video walkthroughs and meeting recaps.</p>
+                        <img src="image/chegg_communication.jpg" alt="how I communicated with stakeholders" width="100%">
+                        <br><br><br>
+                        <p><b id="toogether-highlight">Another challenge was to collect and synthesize feedback from 20+ people with different levels of involvement in the project.</b></p>
+                        <p>I proactively seek feedback from the broader UX team's meetings and people in other roles. I found it tricky initially because I didn't have enough time to cover everything first, and people had different levels of knowledge about my project.</p> 
+                        <img src="image/chegg_feedback.jpg" alt="Collecting feedback from" width="100%">
+                        <p>How did I efficiently collect feedback from a large group of people? I started by introducing the context and emphasizing what feedback I was looking for; due to the time limit, I focused on one or two parts that mattered the most.</p>
+                        <p>Some feedback contradicted each other. To better handle feedback, I kept the high-level project goal in mind and focused on feedback within the scope.</p>
+                    </div>
+                    
+                    <!-- <div class="block">
+                        <h2 id="subtitle2">what I've learned</h2>
+                        <p><b id="toogether-highlight">Hard skills:</b></p>
+                        <ul>
+                            <li>Using Confluence for design documentation and team communication.</li>
+                            <li>Creating prototypes with a design system.</li>
+                            <li>Learning accessibility design systematically and applying the knowledge to design.</li>
+                        </ul>
+                        <p><b id="toogether-highlight">Soft skills:</b></p>
+                        <ul>
+                            <li>Proactively communicating with stakeholders when there's a blocker to get necessary inputs to move forward.</li>
+                            <li>Constantly collecting feedback from my partners and the broader UX team.</li>
+                            <li>Making decisions that fulfill both user goals and business goals. Understanding how my work contributes to higher-level goals of the company.</li>
+                            <li>Closely collaborating with UX researchers, content designers, and product managers.</li>
+                            <li>Handling dependency across different projects through effective communication.</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="block" style="padding-bottom: 10vh;">
+                        <br/>
+                        <h2 id="subtitle2">What my manager and teammate said about me</h2>
+                        <img src="image/chegg_comments.jpg" alt="comments" width="80%">
+                    </div>
+                   
+
+                </div>
+            </div>
+
+            
+                <div class="next container-fliud">
+                    <a href="launchit.html">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>NEXT</p>
+                                <h1>LAUNCHIT</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <img id="arrow" src="image/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            <div class="project-body">
+                
+                <!-- footer -->
+                <div class="footer">
+                    <div class="contact">
+                        <a href="mailto:monaluo.design@gmail.com" target="_blank">Email</a>
+                        <a href="https://www.linkedin.com/in/jiayu-luo/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
+                        <span class="copyright"><span>Designed and developed by Mona Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2022 Mona Luo.</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div> 
+    </body>
+
+    </html>

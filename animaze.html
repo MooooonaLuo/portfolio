@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150477387-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-150477387-1');
+        </script>
+
+        <title>Animaze - Mona Luo</title>
+        <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="project">  
+        <div class="container-fliud">
+             <!-- top nav -->
+             <div class="top-nav" id="navbar">
+                <script src="nav_toggle.js"></script>
+                <div class="top-nav-logo">
+                    <a href="index.html"><img src="image/mona_logo_w.png" alt="mona" style="width: 120px;"></a>
+                </div>
+                <div class="top-nav-right">
+                    <a href="index.html#work">WORK</a>
+                    <a href="index.html#experiments">EXPERIMENTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+
+            <div class="project-body">
+               
+                <!-- content -->
+                <div class="content">
+
+                    <!-- title -->
+                    <div class="title">
+                        <h1>ANIMAZE</h1>
+                        <p id="info">Interactive Gaming Installation &#183; 2017</p>
+                    </div>
+
+                    <!-- overview and my role -->
+                    <div class="intro">
+                        <div class="container-fliud">
+                            <div class="row">
+                                <div class="overview col-sm-8">
+                                    <p id="subtitle1">Overview</p>
+                                    <p>Animaze is a story-driven interactive game that bridges the physical space and the digital one. Through a combination of pixel art animation and classic maze game, my team attempt to bring players a challenging and entertaining interactive experience that leads the players through a fun story. We exhibited Animaze in class for young kids to play with and received lots of positive feedback from them.</p>
+                                </div>
+                                <div class="role col-sm-4">
+                                    <p id="subtitle1">Tools</p>
+                                    <p>Arduino<br>Processing<br>Laser Cutter<br>Piskel</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="previewImg" src="image/animaze_preview.jpg" alt="" width="100%">
+                        <div class="video-container">
+                            <iframe class="video" src="https://www.youtube.com/embed/AU07XitRX2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    
+                    </div>
+                    
+
+                    <!-- detail -->
+
+                    <div class="block" style="padding-top: 7vh;">
+                        <h2 id="subtitle2">creation process</h2>
+                        <p>I designed cartoon characters using an online pixel art editor, Piskel, and exported them as sprite sheets. We used Processing to combine all elements, including backgrounds, characters and chatting bubble, into interactive animation.</p>  
+                    </div>
+                    <img src="image/animaze_piskel.jpg" alt="piskel" width="100%" >
+
+                    <div class="block">
+                        <p>With a laser cutter, we cut small components of the maze out of wooden and plastic boards and glued them into a two-layer maze.</p>  
+                    </div>
+                    <img src="image/animaze_maze.jpg" alt="making the maze" width="100%" >
+
+                    <div class="block">
+                        <p>We employed Arduino to connect the maze and the animation. When a metal ball fall into a hole, it connects two wires beneath the hole and triggers the next plot of the animated story.</p>  
+                    </div>
+                    <img src="image/animaze_arduino.jpg" alt="arduino circuit" width="100%" >
+                   
+                    <div class="block">
+                        <h2 id="subtitle2">how to play?</h2>
+                        <p>Animaze is as simple as simply picking it up and playing! Do your best to get from the start to the finish! However, that is only the half of it. Watch the screen as an animated story plays along with you! The mean Cat has stolen Dog's favorite stuffed toy! Traverse through the maze and help Dog retrieve his toy. As you progress through the maze, so does the story. Just be careful, the mean Cat does not like to play nice. Can you help Dog retrieve his precious toy? He needs you!</p>  
+                    </div>
+                    <img src="image/animaze_photo.jpg" alt="final showcase" width="100%" >
+
+                    <div class="block">
+                        <h2 id="subtitle2">what did kids say about animaze?</h2>
+                        <p>We presented our game to a group of K-12 kids. They found the game engaging and fun to play. Here are what they said about it.</p>
+                        <p><i>"I love mazes and now I love them even more!"</i></p>
+                        <p><i>"It has a good appearance!"</i></p>
+                        <p></i>"The characters are cute!"</i></p>
+                    </div>
+                    <img class="mx-auto d-block corgi" src="image/animaze_corgi.gif" alt="corgi animation">
+
+                    
+                </div>
+            </div>
+
+            
+                <div class="next container-fliud">
+                    <a href="chegg.html">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>NEXT</p>
+                                <h1>CHEGG INTERNSHIP</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <img id="arrow" src="image/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            <div class="project-body">
+                
+                <!-- footer -->
+                <div class="footer">
+                    <div class="contact">
+                        <a href="mailto:monaluo.design@gmail.com" target="_blank">Email</a>
+                        <a href="https://www.linkedin.com/in/jiayu-luo/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/mooooonaluo/" target="_blank">Instagram</a>
+                        <span class="copyright"><span>Designed and developed by Mona Luo </span> &nbsp;&nbsp;&nbsp; Copyright &copy; 2022 Mona Luo.</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div> 
+    </body>
+
+    </html>
